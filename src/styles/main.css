@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Menambahkan box-sizing untuk menghindari masalah dengan lebar elemen */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0; /* Menghapus margin agar lebih konsisten */
+}
+
+/* ... AppBar ... */
+
+.app-bar {
+  /* ... */
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* ... Main Content ... */
+
+main {
+  padding: 32px;
+  flex: 1;
+}
+
+/* ... Footer ... */
+
+footer {
+  padding: 16px;
+  text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+footer p {
+  color: #aaaaaa;
+}
+
+footer p a {
+  color: #db0000;
+  text-decoration: none;
+}
+
+/* ... Hero (Jumbotron) ... */
+
+.hero {
+  height: 360px;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+/* ... Skip to Content ... */
+
+#skip-content {
+  /* ... */
+  min-width: 44px;
+  min-height: 44px;
+  /* ... */
+}
+
+/* ... Restaurants Container ... */
+
+.restaurants-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+/* ... Restaurant Item ... */
+
+.restaurant-item {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.restaurant-item__image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.restaurant-item__info {
+  padding: 16px;
+}
+
+.restaurant-item__name {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.restaurant-item__city,
+.restaurant-item__rating {
+  margin-bottom: 5px;
+}
+
+/* ... Like Button ... */
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
